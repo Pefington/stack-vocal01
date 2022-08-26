@@ -54,3 +54,5 @@ end
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 gem 'shakapacker', '= 6.5'
+
+gem "tailwindcss-rails", "~> 2.0"
