@@ -42,6 +42,7 @@ group :development do
   gem 'rails_live_reload'
 
   gem 'rubocop', require: false
+  gem 'rubocop-faker'
   gem 'rubocop-rails', require: false
 end
 

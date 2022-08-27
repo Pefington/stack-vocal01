@@ -1,6 +1,6 @@
 require:
   - rubocop-rails
-  # - rubocop-faker
+  - rubocop-faker
 
 AllCops:
   NewCops: enable
