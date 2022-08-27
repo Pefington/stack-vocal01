@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "airbnb-base",
+    "prettier",
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:tailwindcss/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "ecmaFeatures": {}
+  },
+  "rules": {
+    "prettier/prettier": "error"
+  },
+  "plugins": [
+    "prettier",
+    "tailwindcss"
+  ]
+}

@@ -1,6 +1,6 @@
 {
-  "name": "app",
-  "private": true,
+  "name": "prairify.me",
+  "private": false,
   "dependencies": {
     "@babel/core": "7",
     "@babel/plugin-transform-runtime": "7",
@@ -24,5 +24,31 @@
   },
   "browserslist": [
     "defaults"
-  ]
+  ],
+  "description": "Fuck lawns.",
+  "repository": "https://github.com/Pefington/prairify.me",
+  "contributors": [
+    "Pierre Andrieu <>",
+    "Gregory Laigneau <>",
+    "Samuel Linard <>",
+    "Noellie Peuch <>",
+    "Chris Pfeiffer <>",
+    "Pierre-François Salmand <salmand.pef@gmail.com>"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.23.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-tailwindcss": "^3.6.0",
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.13"
+  },
+  "scripts": {
+    "lint": "eslint --fix app",
+    "format": "prettier --write app",
+    "dev": "bin/dev"
+  }
 }
