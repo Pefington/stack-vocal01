@@ -16,7 +16,7 @@ gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -39,11 +39,34 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 
+  # ################################################################################
+  # prairify tools below:
+
+  # This will make your browser reload the page when you change a front file
+  # while running the dev server.
   gem 'rails_live_reload'
 
+  # Code linter and formatter.
+  # VSCode: shift+alt+f => removes the wavy blue lines and formats your code.
   gem 'rubocop', require: false
   gem 'rubocop-faker'
   gem 'rubocop-rails', require: false
+
+  # You know this one
+  gem 'better_errors'
+  gem 'binding_of_caller'
+
+  # This checks the DB for consistency!
+  # It's a good idea to run this after changing the DB schema.
+  gem 'database_consistency', require: false
+
+  # This is used by our ERB Formatter/Beautify VSCode extension.
+  gem 'htmlbeautifier'
+
+  # Makes checking the db easier.
+  gem "table_print"
+
+  # ################################################################################
 end
 
 group :test do
@@ -57,6 +80,16 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
+# ################################################################################
+# More prairify tools below:
+
+# This is webpacker, a gem for webpack.
+# Webpacker retired, so we are using the continuation.
+# "Webpacker" in the codebase refers to this gem.
 gem 'shakapacker', '= 6.5'
 
+# Authentication tool.
+gem 'devise'
+
+# This is a wrapper gem for tailwindcss.
 gem 'tailwindcss-rails', '~> 2.0'
