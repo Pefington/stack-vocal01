@@ -52,7 +52,7 @@ group :development do
   gem 'rubocop-faker'
   gem 'rubocop-rails', require: false
 
-  # You know this one
+  # You know this one.
   gem 'better_errors'
   gem 'binding_of_caller'
 
@@ -60,7 +60,7 @@ group :development do
   # It's a good idea to run this after changing the DB schema.
   gem 'database_consistency', require: false
 
-  # This is used by our ERB Formatter/Beautify VSCode extension.
+  # This is our ERB formatter.
   gem 'htmlbeautifier'
 
   # Makes checking the db easier.
