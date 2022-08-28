@@ -64,7 +64,7 @@ group :development do
   gem 'htmlbeautifier'
 
   # Makes checking the db easier.
-  gem "table_print"
+  gem 'table_print'
 
   # ################################################################################
 end
